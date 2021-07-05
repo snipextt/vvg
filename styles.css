@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #d7f5c8;
+}
+
+form{
+    width: 100%;
+    padding: 40px;
+}
+
+.form_control {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    padding-left: 8px;
+}
+
+button {
+    width: 100%;
+    height: 30px;
+
+}
+
+.cards_conatiner {
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    flex-flow: row wrap;
+    padding: 40px;
+}
+
+
+
+.author {
+    background: red;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}
+
+.name {
+    background: orange;
+    padding: 4px;
+    color: white;
+    border-radius: 5px;
+}
+
+.course {
+    background: green;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.card{
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.card > .content {
+    padding: 10px;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #86e491; 
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .hidden{
+      display: none;
+  }
